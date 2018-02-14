@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" media="all" />
+</head>
+<body>
+<div class="col-md-12">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="contact_form">
+					<h3 class="heading"><strong>Feedback</strong> Form <span></span></h3>
+					<div class="con_form">
+						<form action="/thankyou" method="post" id="contactFrm" name="contactFrm">
+							<div class="form-group row">
+							  <label for="example-text-input" class="col-2 col-form-label">First Name</label>
+							  <div class="col-10">
+								<input class="form-control" type="text" placeholder="First Name" name="Fname">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-search-input" class="col-2 col-form-label">Last Name</label>
+							  <div class="col-10">
+								<input class="form-control" type="text" placeholder="Last Name" name="Lname">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-email-input" class="col-2 col-form-label">Email</label>
+							  <div class="col-10">
+								<input class="form-control" type="email" value="<%= nameUser %>" placeholder="Enter Your Email Address" name="email">
+							  </div>
+							</div>
+							<div class="form-group row">
+							  <label for="example-url-input" class="col-2 col-form-label">Favourite Sport</label>
+							  <div class="col-10">
+								<input class="form-control" type="text" placeholder="Favourite Sport" name="favSport">
+								</div>
+							</div>					
+							<div class="form-group row">
+							  <label for="example-url-input" class="col-2 col-form-label">Course Of Study</label>
+							  <div class="col-10">
+								<input class="form-control" type="text" placeholder="Enter course of study" name="csofstudy">
+								</div>
+							</div> 
+							<div class="form-group row">
+							  <label for="example-url-input" class="col-2 col-form-label">Comments</label>
+							  <div class="col-10">
+								<textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
+								</div>
+							</div> 
+							<div class="form-group row">
+							  <div class="offset-sm-2 col-sm-10">
+								<button type="submit" class="btn btn-primary">Submit Feedback</button>
+							  </div>
+							</div>
+						</form>
+					</div>                    	
+				</div>              
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
